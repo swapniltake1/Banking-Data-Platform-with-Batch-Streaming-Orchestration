@@ -17,12 +17,13 @@ Raw Data (Kafka/Files) -> Bronze Layer (Raw Ingestion) -> Silver Layer (Cleansed
 - **Bronze Layer**: Raw data ingestion and storage.
 - **Silver Layer**: Data cleansing and transformation using DBT.
 - **Gold Layer**: Business-ready aggregates and analytics.
-- **Streaming Ingestion**: Real-time data processing.
+- **Streaming Ingestion**: Real-time data processing (supports Kafka for production).
 
 ## Setup
 1. Configure Databricks workspace.
-2. Set up secrets in config.yaml.
-3. Run `python scripts/deploy.py dev` for deployment.
+2. For Kafka streaming: Set up Kafka cluster and update configs/config.yaml with server details.
+3. Set up secrets in config.yaml.
+4. Run `python scripts/deploy.py dev` for deployment.
 
 ## Testing
 Run `pytest tests/` for unit tests.

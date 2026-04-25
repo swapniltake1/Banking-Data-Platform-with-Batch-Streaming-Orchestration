@@ -13,3 +13,8 @@ environments:
 security:
   encryption: true
   masking_fields: ["account_id", "amount"]  # Fields to mask in gold layer
+
+kafka:
+  bootstrap_servers: "your-kafka-server:9092"
+  topic: "banking-transactions"
+  group_id: "databricks-consumer"
