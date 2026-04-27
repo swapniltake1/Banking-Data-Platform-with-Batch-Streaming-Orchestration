@@ -3,3 +3,4 @@ pyspark==3.3.0
 pytest==7.1.0
 black==22.3.0
 flake8==4.0.1
+mlflow==2.3.0

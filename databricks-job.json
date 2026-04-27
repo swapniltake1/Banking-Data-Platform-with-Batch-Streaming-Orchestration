@@ -34,6 +34,18 @@
       ]
     },
     {
+      "task_key": "ml_fraud_training",
+      "notebook_task": {
+        "notebook_path": "/Shared/Banking-Platform/06_ml_fraud_detection",
+        "base_parameters": {}
+      },
+      "depends_on": [
+        {
+          "task_key": "silver_layer"
+        }
+      ]
+    },
+    {
       "task_key": "gold_layer",
       "notebook_task": {
         "notebook_path": "/Shared/Banking-Platform/04_gold_layer",
@@ -41,7 +53,7 @@
       },
       "depends_on": [
         {
-          "task_key": "silver_layer"
+          "task_key": "ml_fraud_training"
         }
       ]
     },

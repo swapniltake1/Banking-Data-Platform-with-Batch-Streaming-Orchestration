@@ -24,6 +24,7 @@ A comprehensive, enterprise-grade data engineering platform for banking transact
 - **Real-Time Streaming**: Continuous data ingestion with support for Apache Kafka or simulated streams.
 - **Multi-Layer Architecture**: Bronze (raw), Silver (cleansed), Gold (aggregated) layers for data maturity.
 - **Data Quality**: Automated validation, schema enforcement, and anomaly detection.
+- **ML-Powered Fraud Detection**: Machine learning models for advanced fraud detection using PySpark MLlib and MLflow.
 
 ### Enterprise Enhancements
 - **CI/CD Pipeline**: Automated linting, testing, and deployment via GitHub Actions.
@@ -47,6 +48,7 @@ A comprehensive, enterprise-grade data engineering platform for banking transact
 - **PySpark**: Distributed data processing and ETL.
 - **Delta Lake**: ACID transactions, time travel, and optimized storage.
 - **DBT (Data Build Tool)**: SQL-based data transformations and testing.
+- **MLflow**: Model lifecycle management for machine learning pipelines.
 
 ### Streaming
 - **Apache Kafka**: Real-time data ingestion (optional, with simulated fallback).
